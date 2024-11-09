@@ -1,0 +1,39 @@
+
+.footer {
+    background-color: #121212; 
+    color: white; 
+    padding: 20px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    gap: 20px; 
+  }
+  
+ 
+  .footerHeading h1 {
+    font-size: 20px;
+    margin: 0; 
+    font-family: 'Roboto', sans-serif; 
+    color: #FFC107; 
+  }
+  
+  .iconContainer {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+  }
+  
+  
+  .icon {
+    font-size: 30px; 
+    color: #FFC107; 
+    cursor: pointer; 
+    transition: color 0.3s ease; 
+  }
+  
+  .icon:hover {
+    color: #00ADB5; 
+  }
+  

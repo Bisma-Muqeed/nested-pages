@@ -1,0 +1,107 @@
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%); 
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0); 
+      opacity: 1;
+    }
+  }@keyframes slideInRight {
+    from {
+      transform: translateX(100%); 
+      opacity: 0; 
+    }
+    to {
+      transform: translateX(0); 
+      opacity: 1; 
+    }
+  }
+
+.contactFormContainer {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    text-align: center;
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;   
+    justify-content: center; 
+}
+
+.formHeading {
+    animation: slideInRight 2s ease-out;
+    padding-top: 50px;
+    color: #FFC107;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contactForm {
+    animation: slideIn 3s ease-out;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.inputGroup {
+    width: 100%;
+}
+
+.inputLabel {
+    display: block;
+    color: #FFC107;
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.inputField,
+.textArea {
+    width: 100%;
+    padding: 12px;
+    background-color: #1C1C1C;
+    color: #F1F1F1;
+    border: 2px solid #FFC107;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.inputField:focus,
+.textArea:focus {
+    border-color: #00ADB5;
+    outline: none;
+}
+
+.textArea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.submitButton {
+    background-color: #FFC107;
+    color: #0A0A0A; 
+    padding: 12px 24px;
+    border: 2px solid #FFC107;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; 
+} 
+
+.submitButton:hover {
+    background-color: #00ADB5;
+    border-color: #00ADB5;
+    cursor: pointer;
+}
